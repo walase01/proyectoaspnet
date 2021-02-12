@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Registrar Libro</h2>
+
+<form action="/CRUD/Create" method="post">
+
+    <label>Name</label> <br />
+    <input name="Name" type="text" /><br />
+    <label>Author</label> <br />
+    <input name="Author" type="text" /><br />
+    <label>Actors</label> <br />
+    <input name="Actors" type="text" /><br />
+    <label>Year</label> <br />
+    <input name="year" type="text" /><br />
+    <label>Synopsis</label> <br />
+    <input name="Synopsis" type="text" /><br />
+    <label>------------</label><br/>
+    <input name="Send" type="submit" /><br />
+</form>
+
+@if(ViewBag.Data != null){
+
+<p>
+    <strong>Registrados</strong> <br />
+    <label>Name</label> <br />
+    @ViewBag.Data["Name"];
+    <br />
+    <label>Author</label> <br />
+    @ViewBag.Data["Author"];
+    <br />
+    <label>Actors</label> <br />
+    @ViewBag.Data["Actors"];
+    <br />
+    <label>Synopsis</label> <br />
+    @ViewBag.Data["Synopsis"];
+    <br />
+</p>
+ }
+
