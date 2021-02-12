@@ -25,18 +25,26 @@
 
 <p>
     <strong>Registrados</strong> <br />
-    <label>Name</label> <br />
-    @ViewBag.Data["Name"];
-    <br />
-    <label>Author</label> <br />
-    @ViewBag.Data["Author"];
-    <br />
-    <label>Actors</label> <br />
-    @ViewBag.Data["Actors"];
-    <br />
-    <label>Synopsis</label> <br />
-    @ViewBag.Data["Synopsis"];
-    <br />
+
+    <table border="1">
+
+        <tr>
+            <td><strong>Name</strong></td>
+            <td><strong>Author</strong></td>
+            <td><strong>Actors</strong></td>
+            <td><strong>year</strong></td>
+            <td><strong>Synopsis</strong></td>
+        </tr>
+
+        <tr>
+            <td>@ViewBag.Data["Name"]</td>
+            <td>@ViewBag.Data["Author"]</td>
+            <td>@ViewBag.Data["Actors"]</td>
+            <td>@ViewBag.Data["year"]</td>
+            <td>@ViewBag.Data["Synopsis"]</td>
+        </tr>
+
+    </table>
 </p>
  }
 
